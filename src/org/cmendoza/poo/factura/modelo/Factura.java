@@ -10,6 +10,13 @@ public class Factura {
     private Cliente cliente;
     private ItemFactura[] facturas;
     /////////// CONSTRUCTOR ///////////////
+    public Factura(String descripcion, Cliente cliente){
+        this.descripcion = descripcion;
+        this.cliente = cliente;
+        idFactura = ++ idFacturaU;
+        this.fecha = new Date();
+        this.facturas = new ItemFactura[2];
+    }
     ////////// GETTER AND SETTER /////////
     ///////// MÉTODOS ///////////////////
 
