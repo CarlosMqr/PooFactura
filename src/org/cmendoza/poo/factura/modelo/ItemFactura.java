@@ -9,5 +9,14 @@ public class ItemFactura {
         this.cantidad =cantidad;
     }
     ////////// GETTER AND SETTER /////////
+    public Producto getProducto(){
+        return this.producto;
+    }
+    public int getCantidad(){
+        return this.cantidad;
+    }
+    public void setCantidad(){
+        this.cantidad = cantidad;
+    }
     ///////// MÉTODOS ///////////////////
 }
