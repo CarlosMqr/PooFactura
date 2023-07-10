@@ -2,11 +2,16 @@ package org.cmendoza.poo.factura.modelo;
 
 public class Producto {
     private int idProducto;
-    private int idProductoU;
+    private static int idProductoU;
     private String nombre;
     private int precio;
 
     /////////// CONSTRUCTOR ///////////////
+    public Producto(String nombre, int precio){
+        this.nombre = nombre;
+        this.precio = precio;
+        idProducto = ++ idProductoU;
+    }
     ////////// GETTER AND SETTER /////////
     ///////// MÉTODOS ///////////////////
 }
