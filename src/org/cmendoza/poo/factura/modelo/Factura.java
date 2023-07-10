@@ -18,6 +18,21 @@ public class Factura {
         this.facturas = new ItemFactura[2];
     }
     ////////// GETTER AND SETTER /////////
+    public int getIdFactura(){
+        return this.idFactura;
+    }
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+    public Date getFecha(){
+        return this.fecha;
+    }
+    public void setFecha(Date fecha){
+        this.fecha = fecha;
+    }
+    public Cliente getCliente(){
+        return this.cliente;
+    }
     ///////// MÉTODOS ///////////////////
 
 }
