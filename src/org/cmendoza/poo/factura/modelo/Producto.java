@@ -13,5 +13,15 @@ public class Producto {
         idProducto = ++ idProductoU;
     }
     ////////// GETTER AND SETTER /////////
-    ///////// MÉTODOS ///////////////////
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public int getPrecio() {
+        return this.precio;
+    }
+    public void setPrecio(int precio){
+        this.precio = precio;
+    }
+    //////// MÉTODOS ///////////////////
 }

@@ -1,6 +1,6 @@
 package org.cmendoza.poo.factura.modelo;
 
-public class Cliente {
+public class Cliente  {
     private String nombre;
     private int noCuenta;
 
