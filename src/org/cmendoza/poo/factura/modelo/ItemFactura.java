@@ -19,4 +19,13 @@ public class ItemFactura {
         this.cantidad = cantidad;
     }
     ///////// MÉTODOS ///////////////////
+    public float calcularImporte(){
+            return this.cantidad * this.producto.getPrecio();
+    }
+
+    @Override
+    public String toString() {
+        return "producto: " + producto +
+                "\ncantidad: " + cantidad;
+    }
 }
