@@ -7,14 +7,18 @@ public class Producto {
     private int precio;
 
     /////////// CONSTRUCTOR ///////////////
-    public Producto(String nombre, int precio){
-        this.nombre = nombre;
-        this.precio = precio;
+    public Producto(){
         idProducto = ++ idProductoU;
     }
     ////////// GETTER AND SETTER /////////
+    public int getIdProducto(){
+        return this.idProducto;
+    }
     public String getNombre(){
         return this.nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
     }
 
     public int getPrecio() {
@@ -24,4 +28,11 @@ public class Producto {
         this.precio = precio;
     }
     //////// MÉTODOS ///////////////////
+
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre +
+                "\nPrecio: " + precio;
+    }
 }
