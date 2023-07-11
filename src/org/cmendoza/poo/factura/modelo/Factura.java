@@ -9,6 +9,7 @@ public class Factura {
     private Date fecha;
     private Cliente cliente;
     private ItemFactura[] facturas;
+    private int indiceFactura;
     /////////// CONSTRUCTOR ///////////////
     public Factura(String descripcion, Cliente cliente){
         this.descripcion = descripcion;
@@ -33,6 +34,15 @@ public class Factura {
     public Cliente getCliente(){
         return this.cliente;
     }
+    public ItemFactura[] getFacturas(){
+        return this.facturas;
+    }
+    public void addItemFactura(ItemFactura factura){
+        if (indiceFactura < this.facturas.length){
+            this.facturas[indiceFactura++] = factura;
+        }
+    }
     ///////// MÉTODOS ///////////////////
+
 
 }
