@@ -25,7 +25,9 @@ public class ItemFactura {
 
     @Override
     public String toString() {
-        return "producto: " + producto +
-                "\ncantidad: " + cantidad;
+        return producto +
+            "\t" + cantidad +
+                "\t" + cantidad +
+                calcularImporte();
     }
 }

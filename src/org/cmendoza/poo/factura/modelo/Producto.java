@@ -4,7 +4,7 @@ public class Producto {
     private int idProducto;
     private static int idProductoU;
     private String nombre;
-    private int precio;
+    private float precio;
 
     /////////// CONSTRUCTOR ///////////////
     public Producto(){
@@ -21,10 +21,10 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public int getPrecio() {
+    public float getPrecio() {
         return this.precio;
     }
-    public void setPrecio(int precio){
+    public void setPrecio(float precio){
         this.precio = precio;
     }
     //////// MÉTODOS ///////////////////
@@ -32,7 +32,7 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre +
-                "\nPrecio: " + precio;
+        return idProducto + "\t" + nombre +
+                "\t" + precio;
     }
 }

@@ -16,7 +16,7 @@ public class Factura {
         this.cliente = cliente;
         idFactura = ++ idFacturaU;
         this.fecha = new Date();
-        this.facturas = new ItemFactura[2];
+        this.facturas = new ItemFactura[5];
     }
     ////////// GETTER AND SETTER /////////
     public int getIdFactura(){
@@ -66,16 +66,16 @@ public class Factura {
             if (fp == null){
                 continue;
             }
-            sb.append(fp.getProducto().getIdProducto());
-            sb.append("\tProducto: " + fp.getProducto().getNombre());
-            sb.append("\tPrecio:" + fp.getProducto().getPrecio());
-            sb.append("\tCantidad: " + fp.getCantidad());
-            sb.append("\tTotal: " + fp.calcularImporte());
+            sb.append("\n" + fp.getProducto().getIdProducto());
+            sb.append("\t" + fp.getProducto().getNombre());
+            sb.append("\t" + fp.getProducto().getPrecio());
+            sb.append("\t"+ fp.getCantidad());
+            sb.append("\t" + fp.calcularImporte());
 
         }
-        sb.append("Total de la compra: " + calcularTotal());
+        sb.append("\nTotal de la compra: " + calcularTotal());
 
-        return toString();
+        return sb.toString();
     }
 
 
