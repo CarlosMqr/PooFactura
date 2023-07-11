@@ -43,6 +43,16 @@ public class Factura {
         }
     }
     ///////// MÉTODOS ///////////////////
+    public float clacularTotal(){
+            float total = 0.0f;
+        for (ItemFactura it: this.facturas) {
+            if (it == null){
+                continue;
+            }
+
+        }
+        return total;
+    }
 
 
 }
